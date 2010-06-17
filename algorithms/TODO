@@ -1,0 +1,21 @@
+**********************************************
+* ALGORITHMS AND DATA STRUCTURES EXPLORATION *
+**********************************************
+
+Open projects:
+
+(Implementation)
+
+* Revise code against "Expert C Programming" by Peter van der Linden
+* Revise code against "C Traps & Pitfalls" by Andrew Koenig
+* Port C code to functional languages such as Haskell or Scala, using functional
+  data structures
+
+
+(Research)  
+
+* Add additional libraries cited in Implementation & Notes sections of part II of
+  "Algorithm Design Manual" by S Skiena
+* Add additional libraries cited in "Handbook of Data Structures and 
+  Applications" by Mehta and Sahni
+  
