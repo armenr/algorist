@@ -6,8 +6,8 @@
 #include "queue.h"
 #include<stdio.h>
 
-int reachable_ancestor[MAXV + 1]; /* earliest reachable ancestor of v */
-int tree_out_degree[MAXV + 1]; /* DFS tree outdegree of v */
+static int reachable_ancestor[MAXV + 1]; /* earliest reachable ancestor of v */
+static int tree_out_degree[MAXV + 1]; /* DFS tree outdegree of v */
 
 void process_vertex_early(int v) {
   reachable_ancestor[v] = v;
@@ -56,7 +56,7 @@ void process_edge(int x, int y) {
       reachable_ancestor[x] = y;
 }
 
-void articulation_vertices(graph *g) {
+static void articulation_vertices(graph *g) {
   int i; 
 
   for(i = 1; i <= (g->nvertices); i++)
@@ -100,6 +100,55 @@ bridge articulation vertex: 1
 parent articulation vertex: 2 
 bridge articulation vertex: 1 
 bridge articulation vertex: 2 
+root articulation vertex: 1 
+
+osman@osman-desktop:~/src/algorithms$ ./biconnected 
+enter # vertices and # edges: 3 2
+enter edge 1 (x, y, w): 1 2 0
+enter edge 2 (x, y, w): 1 3 0
+1:  3 2
+2:  1
+3:  1
+bridge articulation vertex: 1 
+bridge articulation vertex: 1 
+root articulation vertex: 1 
+
+see fig 5.14 pp 178 "The Algorithm Design Manual" by Steve S. Skiena
+(tree edges)
+osman@osman-desktop:~/src/algorithms$ ./biconnected 
+enter # vertices and # edges: 5 4
+enter edge 1 (x, y, w): 1 2 0
+enter edge 2 (x, y, w): 1 3 0
+enter edge 3 (x, y, w): 2 4 0
+enter edge 4 (x, y, w): 2 5 0
+1:  3 2
+2:  5 4 1
+3:  1
+4:  2
+5:  2
+bridge articulation vertex: 1 
+bridge articulation vertex: 2 
+bridge articulation vertex: 2 
+bridge articulation vertex: 1 
+bridge articulation vertex: 2 
+root articulation vertex: 1 
+
+see fig 5.14 pp 178 "The Algorithm Design Manual" by Steve S. Skiena
+(back edge)
+osman@osman-desktop:~/src/algorithms$ ./biconnected 
+enter # vertices and # edges: 5 5
+enter edge 1 (x, y, w): 1 2 0
+enter edge 2 (x, y, w): 1 3 0
+enter edge 3 (x, y, w): 2 4 0
+enter edge 4 (x, y, w): 2 5 0
+enter edge 5 (x, y, w): 5 1 0
+1:  5 3 2
+2:  5 4 1
+3:  1
+4:  2
+5:  1 2
+bridge articulation vertex: 2 
+bridge articulation vertex: 1 
 root articulation vertex: 1 
 
 */

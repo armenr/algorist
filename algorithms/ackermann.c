@@ -5,7 +5,7 @@
 
 static unsigned int calls;
 
-unsigned int formula_ackermann(unsigned int m, unsigned int n) {
+static unsigned int formula_ackermann(unsigned int m, unsigned int n) {
   calls++;
   while(1) {
     switch(m) {
@@ -26,7 +26,7 @@ unsigned int formula_ackermann(unsigned int m, unsigned int n) {
   }
 }
 
-unsigned int iterative_ackermann(unsigned int m, unsigned int n) {
+static unsigned int iterative_ackermann(unsigned int m, unsigned int n) {
   calls++;
   while (m != 0) {
     if(n == 0) 
@@ -38,7 +38,7 @@ unsigned int iterative_ackermann(unsigned int m, unsigned int n) {
   return n + 1;
 }
 
-unsigned int naive_ackermann(unsigned int m, unsigned int n) {
+static unsigned int naive_ackermann(unsigned int m, unsigned int n) {
   calls++;
   if(m == 0)
     return n + 1;

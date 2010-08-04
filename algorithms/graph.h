@@ -31,7 +31,7 @@ typedef struct {
 void delete_edge(graph *g, int x, int y, bool directed);
 void initialize_graph(graph *g, bool directed);
 void insert_edge(graph *g, int x, int y, bool directed, int w);
-void print_graph(graph *g);
+void print_graph(const graph *g);
 void read_graph(graph *g, bool directed);
 
 #endif /* GRAPH_H */

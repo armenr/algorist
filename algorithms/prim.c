@@ -50,7 +50,7 @@ void prim(const graph *g, int start) {
 		v = 1;
 		dist = MAXINT;
 
-		for(i=1; i<=g->nvertices; i++) 
+		for(i = 1; i <= g->nvertices; i++) 
 			if((intree[i] == FALSE) && (dist > distance[i])) {
 				dist = distance[i];
 				v = i;

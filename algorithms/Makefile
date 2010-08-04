@@ -10,7 +10,8 @@ SOURCES = backtrack.c 8-queens.c permutations.c subsets.c queue.c \
 	biconnected.c stack.c strong.c topsort1.c bipartite.c priority_queue.c \
 	kruskal.c set_union.c list-demo.c tree-demo.c matrix.c josephus.c prim.c \
 	dijkstra.c netflow-demo.c annealing.c binomial.c ackermann.c matrix-demo.c \
-	mwt.c mwt-demo.c plates.c gcd.c sort-demo.c tree.c triangulate-demo.c
+	mwt.c mwt-demo.c plates.c gcd.c sort-demo.c tree.c triangulate-demo.c \
+	hash-demo.c hashtbl.c
 
 OBJECTS = backtrack.o 8-queens.o permutations.o subsets.o queue.o  \
 	graph.o random.o sort.o bfs-dfs.o bfs-demo.o dfs-demo.o list.o \
@@ -22,7 +23,7 @@ OBJECTS = backtrack.o 8-queens.o permutations.o subsets.o queue.o  \
 	strong.o topsort1.o bipartite.o priority_queue.o kruskal.o set_union.o \
 	list-demo.o tree-demo.o matrix.o josephus.o prim.o dijkstra.o netflow-demo.o \
 	annealing.o binomial.o ackermann.o matrix-demo.o mwt.o mwt-demo.o gcd.o \
-	sort-demo.o tree.o triangulate-demo.o
+	sort-demo.o tree.o triangulate-demo.o hash-demo.o
 
 BINARIES = 8-queens permutations subsets bfs-demo dfs-demo \
   connected topsort prim floyd-demo findcycle stringedit-demo lcs \
@@ -30,13 +31,13 @@ BINARIES = 8-queens permutations subsets bfs-demo dfs-demo \
 	polly primes bignum elevator order geotest paths sudoku tsp-demo plates \
 	fib partition biconnected strong topsort1 bipartite kruskal matrix-demo tree-demo \
 	list-demo josephus dijkstra netflow-demo binomial editbrute-demo ackermann \
-	mwt-demo gcd sort-demo 
+	mwt-demo gcd sort-demo hash-demo
 
 INCLUDES = bool.h backtrack.h queue.h graph.h editdistance.h \
   geometry.h annealing.h tsp.h stack.h priority_queue.h set_union.h \
   list.h tree.h item.h kruskal.h netflow.h bfs-dfs.h sudoku.h random.h \
   stringedit.h editbrute.h convex-hull.h matrix.h mwt.h partition.h sort.h \
-  triangulate.h
+  triangulate.h hashtbl.h
 
 CC = gcc
 CFLAGS = -Wall -Wextra -ggdb # -O4 -g -DNDEBUG -pg
@@ -103,6 +104,9 @@ gcd:		gcd.o
 
 geotest:	geometry.o geotest.o
 		$(CC) -o $@ geometry.o geotest.o $(LFLAGS)
+
+hash-demo:	hashtbl.o hash-demo.o 
+		$(CC) -o $@ hashtbl.o hash-demo.o $(LFLAGS)
 
 kruskal:		graph.o kruskal.o queue.o set_union.o
 		$(CC) -o $@ bfs-dfs.c graph.o kruskal.o queue.o set_union.o $(LFLAGS)

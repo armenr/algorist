@@ -104,7 +104,7 @@ void find_path(int start, int end, const int parents[]) {
 }
 
 void initialize_search(const graph *g) {
-  int i;                          /* counter */
+  int i;          
 
 	time = 0;
 

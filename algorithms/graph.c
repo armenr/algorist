@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 void initialize_graph(graph *g, bool directed) {
-	int i;				/* counter */
+	int i;				
 
 	g -> nvertices = 0;
 	g -> nedges = 0;
@@ -17,7 +17,7 @@ void initialize_graph(graph *g, bool directed) {
 }
 
 void read_graph(graph *g, bool directed) {
-	int i;				/* counter */
+	int i;				
 	int m;				/* number of edges */
 	int x, y, w;			/* vertices in edge (x,y) and weught*/
 
@@ -80,8 +80,8 @@ void delete_edge(graph *g, int x, int y, bool directed) {
 	printf("Warning: deletion(%d,%d) not found in g.\n",x,y);
 }
 
-void print_graph(graph *g) {
-	int i;				/* counter */
+void print_graph(const graph *g) {
+	int i;				
 	edgenode *p;			/* temporary pointer */
 
 	for(i = 1; i <= g->nvertices; i++) {

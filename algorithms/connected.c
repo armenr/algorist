@@ -8,16 +8,13 @@
 void process_vertex(int v) {
   printf(" %d",v);
 }
-
-
 void process_vertex_early(int v) {
   printf(" %d",v);
 }
-
 void process_vertex_late(int v) {}
 void process_edge(int x, int y) {}
 
-void connected_components(graph *g) {
+static void connected_components(graph *g) {
 	int c;				/* component number */
 	int i;				/* counter */
 
@@ -62,5 +59,30 @@ enter edge 7 (x, y, w): 5 4 0
 5:  4 2 1
 6:  1
 Component 1: 1 6 5 2 4 3
+
+plus a simple 3 node tree: 7-8, 7-9
+
+osman@osman-desktop:~/src/algorithms$ ./connected 
+enter # vertices and # edges: 9 9
+enter edge 1 (x, y, w): 1 2 0
+enter edge 2 (x, y, w): 1 5 0
+enter edge 3 (x, y, w): 1 6 0
+enter edge 4 (x, y, w): 2 5 0
+enter edge 5 (x, y, w): 2 3 0
+enter edge 6 (x, y, w): 3 4 0
+enter edge 7 (x, y, w): 5 4 0
+enter edge 8 (x, y, w): 7 8 0
+enter edge 9 (x, y, w): 7 9 0
+1:  6 5 2
+2:  3 5 1
+3:  4 2
+4:  5 3
+5:  4 2 1
+6:  1
+7:  9 8
+8:  7
+9:  7
+Component 1: 1 6 5 2 4 3
+Component 2: 7 9 8
 
 */
