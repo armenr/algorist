@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="algorithms" root=".">
+      <df name="datafiles" kind="SOURCE_LOGICAL_FOLDER">
+        <in>outgraph.m</in>
+        <in>super.m</in>
+        <in>wgrid.m</in>
+      </df>
+      <df name="sudoku-examples" kind="SOURCE_LOGICAL_FOLDER">
+      </df>
+      <df name="tsp-examples" kind="SOURCE_LOGICAL_FOLDER">
+      </df>
+      <in>8-queens.c</in>
+      <in>ackermann.c</in>
+      <in>annealing.c</in>
+      <in>annealing.h</in>
+      <in>backtrack.c</in>
+      <in>backtrack.h</in>
+      <in>bfs-demo.c</in>
+      <in>bfs-dfs.c</in>
+      <in>bfs-dfs.h</in>
+      <in>bi-connected.c</in>
+      <in>bignum.c</in>
+      <in>binomial.c</in>
+      <in>bipartite.c</in>
+      <in>connected.c</in>
+      <in>convex-hull-demo.c</in>
+      <in>convex-hull.c</in>
+      <in>convex-hull.h</in>
+      <in>dfs-demo.c</in>
+      <in>dijkstra.c</in>
+      <in>distance.c</in>
+      <in>edit-brute-demo.c</in>
+      <in>edit-brute.c</in>
+      <in>edit-brute.h</in>
+      <in>edit-distance.c</in>
+      <in>edit-distance.h</in>
+      <in>elevator.c</in>
+      <in>fib.c</in>
+      <in>find-cycle.c</in>
+      <in>floyd-demo.c</in>
+      <in>floyd.c</in>
+      <in>floyd.h</in>
+      <in>gcd.c</in>
+      <in>geometry.c</in>
+      <in>geometry.h</in>
+      <in>geotest.c</in>
+      <in>josephus.c</in>
+      <in>kruskal-demo.c</in>
+      <in>kruskal.c</in>
+      <in>kruskal.h</in>
+      <in>lcs.c</in>
+      <in>matrix-demo.c</in>
+      <in>matrix.c</in>
+      <in>matrix.h</in>
+      <in>mwt-demo.c</in>
+      <in>mwt.c</in>
+      <in>mwt.h</in>
+      <in>netflow-demo.c</in>
+      <in>netflow.c</in>
+      <in>netflow.h</in>
+      <in>order.c</in>
+      <in>partition.c</in>
+      <in>partition.h</in>
+      <in>paths.c</in>
+      <in>permutations.c</in>
+      <in>plates.c</in>
+      <in>polly.c</in>
+      <in>prim-demo.c</in>
+      <in>prim.c</in>
+      <in>prim.h</in>
+      <in>primes.c</in>
+      <in>random.c</in>
+      <in>random.h</in>
+      <in>set-union.c</in>
+      <in>set-union.h</in>
+      <in>sort-demo.c</in>
+      <in>sort.c</in>
+      <in>sort.h</in>
+      <in>string-edit-demo.c</in>
+      <in>string-edit.c</in>
+      <in>string-edit.h</in>
+      <in>strong.c</in>
+      <in>subsets.c</in>
+      <in>substring-edit.c</in>
+      <in>sudoku.c</in>
+      <in>sudoku.h</in>
+      <in>superman.c</in>
+      <in>topsort.c</in>
+      <in>topsort1.c</in>
+      <in>triangulate-demo.c</in>
+      <in>triangulate.c</in>
+      <in>triangulate.h</in>
+      <in>tsp-demo.c</in>
+      <in>tsp.c</in>
+      <in>tsp.h</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile-algorithms.mk</itemPath>
+      <itemPath>makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-algorithms.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>$(MAKE) -f Makefile</buildCommand>
+          <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="bi-connected.c" ex="true" tool="0">
+      </item>
+      <item path="datafiles/outgraph.m" ex="true" tool="0">
+      </item>
+      <item path="datafiles/super.m" ex="true" tool="0">
+      </item>
+      <item path="datafiles/wgrid.m" ex="true" tool="0">
+      </item>
+      <item path="distance.c" ex="true" tool="0">
+      </item>
+      <item path="edit-brute-demo.c" ex="true" tool="0">
+      </item>
+      <item path="edit-brute.c" ex="true" tool="0">
+      </item>
+      <item path="edit-brute.h" ex="true" tool="3">
+      </item>
+      <item path="edit-distance.c" ex="true" tool="0">
+      </item>
+      <item path="edit-distance.h" ex="true" tool="3">
+      </item>
+      <item path="find-cycle.c" ex="true" tool="0">
+      </item>
+      <item path="prim-demo.c" ex="true" tool="0">
+      </item>
+      <item path="prim.h" ex="true" tool="3">
+      </item>
+      <item path="set-union.c" ex="true" tool="0">
+      </item>
+      <item path="set-union.h" ex="true" tool="3">
+      </item>
+      <item path="string-edit-demo.c" ex="true" tool="0">
+      </item>
+      <item path="string-edit.c" ex="true" tool="0">
+      </item>
+      <item path="string-edit.h" ex="true" tool="3">
+      </item>
+      <item path="substring-edit.c" ex="true" tool="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
