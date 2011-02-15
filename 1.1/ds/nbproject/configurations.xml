@@ -54,7 +54,7 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>$(MAKE) -f Makefile</buildCommand>
           <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
-          <executablePath></executablePath>
+          <executablePath>./sort-demo</executablePath>
           <cTool>
             <incDir>
               <pElem>.</pElem>
